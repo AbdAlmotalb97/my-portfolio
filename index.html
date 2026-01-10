@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Ahmed's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            color: #2c3e50;
+        }
+        
+        .container {
+            max-width: 600px;
+            padding: 3rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            backdrop-filter: blur(5px);
+        }
+        
+        h1 {
+            color: #3B82F6;
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+        
+        .welcome-text {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .loading-container {
+            margin: 2rem 0;
+        }
+        
+        .loading {
+            display: inline-block;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        
+        .loading:after {
+            content: '';
+            display: inline-block;
+            animation: dots 1.8s infinite;
+        }
+        
+        @keyframes dots {
+            0%, 20% {
+                content: '.';
+            }
+            40% {
+                content: '..';
+            }
+            60% {
+                content: '...';
+            }
+            80%, 100% {
+                content: '';
+            }
+        }
+        
+        .countdown {
+            font-size: 1rem;
+            color: #64748b;
+            margin-top: 1rem;
+        }
+        
+        .redirect-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 12px 24px;
+            background-color: #3B82F6;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+            cursor: pointer;
+        }
+        
+        .redirect-link:hover {
+            background-color: #1D4ED8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1.5rem;
+            opacity: 0.8;
+        }
+        
+        .auto-redirect {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#3B82F6">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        
+        <h1>Welcome to My Portfolio</h1>
+        
+        <p class="welcome-text">
+            Hello! I'm Ahmed AbdAlmotalb, a passionate Data Analyst specializing in Power BI, SQL, and Python.
+        </p>
+        
+        <div class="loading-container">
+            <div class="loading">Loading portfolio content</div>
+        </div>
+        
+        <a href="ahmed.html" class="redirect-link">
+            Enter Portfolio Now
+        </a>
+        
+        <div class="auto-redirect">
+            Auto-redirect in <span id="countdown">10</span> seconds
+        </div>
+    </div>
+
+    <script>
+        // Countdown for automatic redirect
+        let seconds = 10;
+        const countdownElement = document.getElementById('countdown');
+        const timer = setInterval(() => {
+            seconds--;
+            countdownElement.textContent = seconds;
+            
+            if (seconds <= 0) {
+                clearInterval(timer);
+                window.location.href = "ahmed.html";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 SQL Analysis | Ahmed's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="project.css">
+    <style>
+        .sql-code {
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        .sql-keyword { color: #0000ff; }
+        .sql-function { color: #ff00ff; }
+        .sql-comment { color: #008000; }
+    </style>
+</head>
+<body>
+    
+    <header class="project-hero">
+        <h1>COVID-19 SQL Analysis</h1>
+        <p>Exploring global pandemic data through SQL queries and analytics</p>
+    </header>
+    
+    <nav class="project-navigation">
+        <a href="Amazon_Data_Scraping.html" class="nav-button">← Previous Project</a>
+        <a href="../ahmed.html" class="nav-button">Back to Portfolio</a>
+        <a href="hr_dashboard.html" class="nav-button">Next Project →</a>
+    </nav>
+    
+    <div class="project-container">
+        <div class="project-content">
+            <article>
+                <h2>Project Overview</h2>
+                <p>This SQL project analyzes global COVID-19 data to reveal trends in infections, fatalities,
+				and vaccination progress. Using advanced SQL techniques, I transformed raw pandemic data into actionable insights
+				about country-level risks and global patterns.</p>
+                
+                <p>The analysis enables:</p>
+                <ul>
+                    <li>Comparison of fatality rates across countries</li>
+                    <li>Tracking of vaccination progress relative to population</li>
+                    <li>Identification of high-risk regions</li>
+                    <li>Preparation of clean datasets for visualization</li>
+                </ul>
+                
+                <h3>Key Analyses Performed</h3>
+                <ul>
+                    <li>
+                        <p><strong>Fatality Rates</strong></p>
+                        <p>Calculated total deaths vs. total cases to identify country-level mortality risks.</p>
+                    </li>
+                    <li>
+                        <p><strong>Infection Rates</strong></p>
+                        <p>Measured what percentage of each country's population was affected.</p>
+                    </li>
+                    <li>
+                        <p><strong>Geographic Impact</strong></p>
+                        <p>Ranked countries and continents by absolute death counts and per-capita rates.</p>
+                    </li>
+                    <li>
+                        <p><strong>Vaccination Progress</strong></p>
+                        <p>Used rolling sums to track vaccination coverage relative to population size.</p>
+                    </li>
+                </ul>
+                
+                <h3>Technical Implementation</h3>
+                <p>The project utilized:</p>
+                <ul>
+                    <li>Common Table Expressions (CTEs) for complex queries</li>
+                    <li>Window functions for rolling calculations</li>
+                    <li>Multiple joins across related tables</li>
+                    <li>Temporary tables for intermediate results</li>
+                    <li>Views to prepare data for Power BI visualization</li>
+                </ul>
+                
+                
+                <!-- Gallery Carousel -->
+                <div class="gallery-container">
+                    <button class="carousel-nav-button carousel-prev" aria-label="Previous image">&#10094;</button>
+                    
+                    <div class="carousel-gallery">
+                        <div class="carousel-item active">
+                            <img src="../assets/covid-sql/1.jpg" alt="Fatality Rate Analysis">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/covid-sql/2.jpg" alt="Vaccination Progress">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/covid-sql/3.jpg" alt="SQL Query Results">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/covid-sql/4.jpg" alt="Power BI Visualization">
+                        </div>
+						<div class="carousel-item">
+                            <img src="../assets/covid-sql/5.jpg" alt="Power BI Visualization">
+                        </div>
+						<div class="carousel-item">
+                            <img src="../assets/covid-sql/6.jpg" alt="Power BI Visualization">
+                        </div>
+						<div class="carousel-item">
+                            <img src="../assets/covid-sql/7.jpg" alt="Power BI Visualization">
+                        </div>
+						<div class="carousel-item">
+                            <img src="../assets/covid-sql/8.jpg" alt="Power BI Visualization">
+                        </div>
+						<div class="carousel-item">
+                            <img src="../assets/covid-sql/9.jpg" alt="Power BI Visualization">
+                        </div>
+						<div class="carousel-item">
+                            <img src="../assets/covid-sql/10.jpg" alt="Power BI Visualization">
+                        </div>
+						<div class="carousel-item">
+                            <img src="../assets/covid-sql/11.jpg" alt="Power BI Visualization">
+                        </div>
+						
+                    </div>
+                    
+                    <button class="carousel-nav-button carousel-next" aria-label="Next image">&#10095;</button>
+                    
+                    <div class="carousel-dots">
+                        <!-- Dots will be added by JavaScript -->
+                    </div>
+                </div>
+                
+            </article>
+            
+            <aside class="project-details">
+                <h3>Project Details</h3>
+                
+                <div class="detail-item">
+                    <h4>Technologies Used</h4>
+                    <div class="tech-tags">
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">CTEs</span>
+                        <span class="tech-tag">Window Functions</span>
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">Data Modeling</span>
+                    </div>
+                </div>
+                
+                <div class="detail-item">
+                    <h4>Project Timeline</h4>
+                    <p>2 weeks (2024)</p>
+                </div>
+                
+                <div class="detail-item">
+                    <h4>Project Type</h4>
+                    <p>SQL Data Exploration</p>
+                    
+                </div>
+                
+                <div class="detail-item">
+                    <h4>Key Achievements</h4>
+                    <ul>
+                        <li>Identified high-risk countries through fatality analysis</li>
+                        <li>Created reusable SQL views for visualization</li>
+                        <li>Developed complex rolling calculations</li>
+                    </ul>
+                </div>
+                
+                <div class="detail-item">
+                    <h4>Source Code</h4>
+                    <a href="https://github.com/AbdAlmotalb/COVID-Data-Exploration-" target="_blank" class="code-link">View on GitHub</a>
+                </div>
+            </aside>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Ahmed AbdAlmotalb. All Rights Reserved.</p>
+        <p>
+            <a href="https://www.linkedin.com/in/ahmed-abdalmotalb-7163902a2" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/AbdAlmotalb" target="_blank">GitHub</a>
+        </p>
+    </footer>
+
+    <script src="project.js"></script>
+</body>
+</html>

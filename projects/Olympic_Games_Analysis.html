@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympic Games Dashboard | Ahmed's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    
+    <header class="project-hero">
+        <h1>Olympic Games Dashboard</h1>
+        <p>A comprehensive Power BI dashboard analyzing athlete performance, medal distributions, and country rankings</p>
+    </header>
+    
+    <nav class="project-navigation">
+        <a href="powerbi_ecommerce.html" class="nav-button">← Previous Project</a>
+        <a href="../ahmed.html" class="nav-button">Back to Portfolio</a>
+        <a href="Healthcare_Analytics.html" class="nav-button">Next Project →</a>
+    </nav>
+    
+    <div class="project-container">
+        <div class="project-content">
+            <article>
+                <h2>Project Overview</h2>
+                <p>This Power BI dashboard provides historical insights into Olympic Games performance by analyzing key metrics including athlete statistics, medal distributions, and country rankings over time. The project combines Python data scraping with Power BI visualization to create a comprehensive view of Olympic history.</p>
+                
+                <p>The dashboard enables Viwers to:</p>
+                <ul>
+                    <li>Understand athlete performance trends across different sports and events</li>
+                    <li>Analyze country dominance patterns in specific sports</li>
+                    <li>Track medal distributions by gender, age, and country</li>
+                    <li>Compare Summer and Winter Games participation</li>
+                </ul>
+                
+                <h3>Key Features & Analysis</h3>
+                <ul>
+                    <li>
+                        <p><strong>Athlete Analytics</strong></p>
+                        <p>Tracking medal counts, age distributions, and physical attributes of athletes to identify performance patterns across different sports and events.</p>
+                    </li>
+                    <li>
+                        <p><strong>Country Performance</strong></p>
+                        <p>Calculating total medals and medal percentages by country with visualizations showing historical trends and sporting strengths.</p>
+                    </li>
+                    <li>
+                        <p><strong>Data Enrichment</strong></p>
+                        <p>Enhancing raw NOC codes with full country names and scraping additional athlete data from Olympedia.org for more comprehensive analysis.</p>
+                    </li>
+                    <li>
+                        <p><strong>Historical Trends</strong></p>
+                        <p>Visualizing participation growth, gender equality progress, and sporting event evolution across Olympic history.</p>
+                    </li>
+                    <li>
+                        <p><strong>Sport-Specific Insights</strong></p>
+                        <p>Identifying dominant countries in specific sports and tracking performance changes over multiple Olympiads.</p>
+                    </li>
+                </ul>
+                
+                <h3>Technical Implementation</h3>
+                <p>The dashboard was built in Power BI with:</p>
+                <ul>
+                    <li>Data modeling to connect athlete, event, and country tables</li>
+                    <li>DAX measures for calculating KPIs like medal percentages and country rankings</li>
+                    <li>Interactive filters and slicers for dynamic analysis</li>
+                    <li>Custom visualizations to highlight key relationships</li>
+                    <li>Python scripts for data scraping and enrichment</li>
+                </ul>
+                
+                <!-- Gallery Carousel -->
+                <div class="gallery-container">
+                    <button class="carousel-nav-button carousel-prev" aria-label="Previous image">&#10094;</button>
+                    
+                    <div class="carousel-gallery">
+                        <div class="carousel-item active">
+                            <img src="../assets/Olympic/Home.jpg" alt="Olympic Dashboard Home">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Olympic/Over_view.jpg" alt="Over_view Analysis">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Olympic/Detailed_Game.jpg" alt="Detailed_Game Analysis">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Olympic/Regions.jpg" alt="Country Performance">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Olympic/athelates.jpg" alt="athelates Profiles">
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-nav-button carousel-next" aria-label="Next image">&#10095;</button>
+                    
+                    <div class="carousel-dots">
+                        <!-- Dots will be added by JavaScript -->
+                    </div>
+                </div>
+                
+            </article>
+            
+            <aside class="project-details">
+                <h3>Project Details</h3>
+                
+                <div class="detail-item">
+                    <h4>Technologies Used</h4>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">DAX</span>
+                        <span class="tech-tag">Data Modeling</span>
+                        <span class="tech-tag">Data Visualization</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+                
+                <div class="detail-item">
+                    <h4>Project Timeline</h4>
+                    <p>2 weeks (2025)</p>
+                </div>
+                
+                <div class="detail-item">
+                    <h4>Project Type</h4>
+                    <p>Olympic Games Data Visualization</p>
+                </div>
+                
+                <div class="detail-item">
+                    <h4>Key Achievements</h4>
+                    <ul>
+                        <li>Identified USA as the most dominant country in Athletics</li>
+                        <li>Highlighted Michael Phelps as the most decorated Olympian</li>
+                        <li>Larysa Semenivna is the most successful female Olympian</li>
+						<li>Created reusable data enrichment framework</li>
+                    </ul>
+                </div>
+                
+                <div class="detail-item">
+                    <h4>Source Code</h4>
+                    <a href="https://github.com/AbdAlmotalb/Olympics" target="_blank" class="code-link">View on GitHub</a>
+                </div>
+            </aside>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Ahmed AbdAlmotalb. All Rights Reserved.</p>
+        <p>
+            <a href="https://www.linkedin.com/in/ahmed-abdalmotalb-7163902a2" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/AbdAlmotalb" target="_blank">GitHub</a>
+        </p>
+    </footer>
+
+    <script src="project.js"></script>
+</body>
+</html>

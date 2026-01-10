@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Product Scraping | Ahmed's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    
+    <header class="project-hero">
+        <h1>Amazon Product Scraping</span></h1>
+        <p>A Python web scraping project extracting product data from Amazon</p>
+    </header>
+    
+    <nav class="project-navigation">
+        <a href="Bike_sales_dashboard.html" class="nav-button">← Previous Project</a>
+        <a href="../ahmed.html" class="nav-button">Back to Portfolio</a>
+        <a href="COVID_Data_Exploration.html" class="nav-button">Next Project →</a>
+    </nav>
+    
+    <div class="project-container">
+        <div class="project-content">
+            <article>
+                <h2>Project Overview</h2>
+                <p>This Python project scrapes product names, prices, and metadata from Amazon product pages, transforming unstructured web data into structured datasets for price tracking and e-commerce analysis.</p>
+                
+                <p>The script enables users to:</p>
+                <ul>
+                    <li>Extract real-time product data from Amazon</li>
+                    <li>Handle dynamic page content and missing values</li>
+                    <li>Export clean, analysis-ready CSV files</li>
+                    <li>Automate price monitoring workflows</li>
+                </ul>
+                
+                <h3>Key Features & Technical Approach</h3>
+                <ul>
+                    <li>
+                        <p><strong>Data Extraction</strong></p>
+                        <p>Scraped product names, prices, URLs, and timestamps while handling Amazon's dynamic page structures.</p>
+                    </li>
+                    <li>
+                        <p><strong>Error Resilience</strong></p>
+                        <p>Implemented graceful fallbacks for missing prices.</p>
+                    </li>
+                    <li>
+                        <p><strong>Data Pipeline</strong></p>
+                        <p>Transformed raw HTML into structured CSV with pandas, ready for Excel or database import.</p>
+                    </li>
+                    <li>
+                        <p><strong>Scalable Architecture</strong></p>
+                        <p>Designed to process multiple product URLs.</p>
+                    </li>
+                </ul>
+                
+                <h3>Technical Implementation</h3>
+                <p>The project was built with:</p>
+                <ul>
+                    <li><strong>BeautifulSoup</strong> for HTML parsing and data extraction</li>
+                    <li><strong>pandas</strong> for data cleaning and CSV export</li>
+                    <li><strong>requests</strong> with custom headers for web scraping</li>
+                    <li><strong>Python</strong> classes for maintainable scraping logic</li>
+                    <li>CSV output with columns: <code>product_name, price, url, scrape_date</code></li>
+                </ul>
+                
+                <!-- Gallery Carousel -->
+                <div class="gallery-container">
+                    <button class="carousel-nav-button carousel-prev" aria-label="Previous image">&#10094;</button>
+                    
+                    <div class="carousel-gallery">
+                        <div class="carousel-item active">
+                            <img src="../assets/amazon_scraping/1.jpg" alt="Terminal Output">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/amazon_scraping/2.jpg" alt="CSV Data Preview">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/amazon_scraping/3.jpg" alt="Python Code Snippet">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/amazon_scraping/4.jpg" alt="Price Trend Visualization">
+                        </div>
+						<div class="carousel-item">
+                            <img src="../assets/amazon_scraping/5.jpg" alt="Price Trend Visualization">
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-nav-button carousel-next" aria-label="Next image">&#10095;</button>
+                    
+                    <div class="carousel-dots">
+                        <!-- Dots will be added by JavaScript -->
+                    </div>
+                </div>
+                
+            </article>
+            
+            <aside class="project-details">
+                <h3>Project Details</h3>
+                
+                <div class="detail-item">
+                    <h4>Technologies Used</h4>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">BeautifulSoup</span>
+                        <span class="tech-tag">pandas</span>
+                        <span class="tech-tag">Web Scraping</span>
+                        <span class="tech-tag">Data Automation</span>
+                    </div>
+                </div>
+                
+                <div class="detail-item">
+                    <h4>Project Timeline</h4>
+                    <p>1 week (2024)</p>
+                </div>
+                
+                <div class="detail-item">
+                    <h4>Project Type</h4>
+                    <p>Web Data Extraction Project</p>
+                    
+                </div>
+                
+                <div class="detail-item">
+                    <h4>Key Achievements</h4>
+                    <ul>
+                        <li>Automated CSV data pipeline</li>
+                        <li>Handled dynamic page structures</li>
+                    </ul>
+                </div>
+                
+                <div class="detail-item">
+                    <h4>Source Code</h4>
+                    <a href="https://github.com/AbdAlmotalb/Amazon-data-scraping" target="_blank" class="code-link">View on GitHub</a>
+                </div>
+            </aside>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Ahmed AbdAlmotalb. All Rights Reserved.</p>
+        <p>
+            <a href="https://www.linkedin.com/in/ahmed-abdalmotalb-7163902a2" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/AbdAlmotalb" target="_blank">GitHub</a>
+        </p>
+    </footer>
+
+    <script src="project.js"></script>
+</body>
+</html>

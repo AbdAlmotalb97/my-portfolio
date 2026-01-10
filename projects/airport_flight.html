@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Delays Analysis Dashboard | Ahmed's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    
+    <header class="project-hero">
+        <h1>Flight Delays Analysis Dashboard</h1>
+        <p>A Power BI dashboard analyzing flight delay patterns, causes, and operational insights</p>
+    </header>
+    
+    <nav class="project-navigation">
+        <a href="adventureworks.html" class="nav-button">← Previous Project</a>
+        <a href="../ahmed.html" class="nav-button">Back to Portfolio</a>
+        <a href="Titanic_dashboard.html" class="nav-button">Next Project →</a>
+    </nav>
+    
+    <div class="project-container">
+        <div class="project-content">
+            <article>
+                <h2>Project Overview</h2>
+                <p>This Power BI dashboard provides an in-depth analysis of flight delays, examining patterns, causes, and actionable insights that can guide improvements in airline operations and customer satisfaction. The project combines Excel data cleaning with Power BI visualization to create a comprehensive view of flight delay dynamics.</p>
+                
+                <p>The dashboard enables stakeholders to:</p>
+                <ul>
+                    <li>Identify patterns and trends in flight delays</li>
+                    <li>Analyze delay causes across different airlines and airports</li>
+                    <li>Monitor cancellation and diversion rates</li>
+                    <li>Optimize scheduling based on peak delay periods</li>
+                </ul>
+                
+                <h3>Key Features & Analysis</h3>
+                <ul>
+                    <li>
+                        <p><strong>Airline Performance</strong></p>
+                        <p>Tracking delay metrics across different airlines to identify operational strengths and weaknesses.</p>
+                    </li>
+                    <li>
+                        <p><strong>Airport Analysis</strong></p>
+                        <p>Identifying key hubs and high-impact airports prone to delays, with Puerto Rico showing the longest average delays.</p>
+                    </li>
+                    <li>
+                        <p><strong>Delay Causes</strong></p>
+                        <p>Categorizing delays by reason (40% from late arrivals, 30% carrier delays) to target improvement areas.</p>
+                    </li>
+                    <li>
+                        <p><strong>Temporal Patterns</strong></p>
+                        <p>Revealing peak delay times (1PM-7PM) and seasonal trends (December peaks) for resource planning.</p>
+                    </li>
+                    <li>
+                        <p><strong>Operational Disruptions</strong></p>
+                        <p>Analyzing canceled and diverted flights to understand broader operational challenges.</p>
+                    </li>
+                </ul>
+                
+                <h3>Technical Implementation</h3>
+                <p>The dashboard was built with:</p>
+                <ul>
+                    <li>Excel for data cleaning and preparation</li>
+                    <li>Power BI data modeling connecting flight, airline, and airport tables</li>
+                    <li>DAX measures for calculating delay metrics and performance indicators</li>
+                    <li>USERELATIONSHIP for complex multi-dimensional analysis</li>
+                    <li>Interactive filters for dynamic airport and airline comparisons</li>
+                </ul>
+                
+                <!-- Gallery Carousel -->
+                <div class="gallery-container">
+                    <button class="carousel-nav-button carousel-prev" aria-label="Previous image">&#10094;</button>
+                    
+                    <div class="carousel-gallery">
+                        <div class="carousel-item active">
+                            <img src="../assets/Delayed_flights/Home.jpg" alt="Dashboard Home">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Delayed_flights/Airlines.jpg" alt="Airline Performance">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Delayed_flights/Delayes.jpg" alt="Airport Analysis">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Delayed_flights/Delay_Reason.jpg" alt="Delay Causes">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/Delayed_flights/Flights_by_time.jpg" alt="Temporal Trends">
+                        </div>
+						<div class="carousel-item">
+                            <img src="../assets/Delayed_flights/Delay_By_date.jpg" alt="Delay Time">
+                        </div>
+						<div class="carousel-item">
+                            <img src="../assets/Delayed_flights/Flights_by_dates.jpg" alt="Delay Date">
+                        </div>
+						<div class="carousel-item">
+                            <img src="../assets/Delayed_flights/Delay_details.jpg" alt="Delay Reason">
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-nav-button carousel-next" aria-label="Next image">&#10095;</button>
+                    
+                    <div class="carousel-dots">
+                        <!-- Dots will be added by JavaScript -->
+                    </div>
+                </div>
+                
+            </article>
+            
+            <aside class="project-details">
+                <h3>Project Details</h3>
+                
+                <div class="detail-item">
+                    <h4>Technologies Used</h4>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">Excel</span>
+                        <span class="tech-tag">DAX</span>
+                        <span class="tech-tag">Data Modeling</span>
+                        <span class="tech-tag">Data Visualization</span>
+                    </div>
+                </div>
+                
+                <div class="detail-item">
+                    <h4>Project Timeline</h4>
+                    <p>2 weeks (2024)</p>
+                </div>
+                
+                <div class="detail-item">
+                    <h4>Project Type</h4>
+                    <p>Flights Delay Diagnostics Platform</p>
+                </div>
+                
+                <div class="detail-item">
+                    <h4>Key Achievements</h4>
+                    <ul>
+                        <li>Identified late arrivals as primary delay cause (40%)</li>
+                        <li>Highlighted Puerto Rico's operational challenges</li>
+						<li> December records the highest delays, likely driven by winter storms, illustrating how seasonal factors impact flight punctuality</li>
+                        <li>Created reusable delay analysis framework</li>
+                    </ul>
+                </div>
+                
+                <div class="detail-item">
+                    <h4>Source Code</h4>
+                    <a href="https://github.com/AbdAlmotalb/Flight-Delays-Analysis-Dashboard" target="_blank" class="code-link">View on GitHub</a>
+                </div>
+            </aside>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Ahmed AbdAlmotalb. All Rights Reserved.</p>
+        <p>
+            <a href="https://www.linkedin.com/in/ahmed-abdalmotalb-7163902a2" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/AbdAlmotalb" target="_blank">GitHub</a>
+        </p>
+    </footer>
+
+    <script src="project.js"></script>
+</body>
+</html>
